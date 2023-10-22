@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="line1">
+            <div id="password">u#AoWe2Te5</div>
+            <div class="copy-icon" onclick="copyPassword()">
+                <i class="fa-regular fa-copy"></i>
+            </div>           
+        </div> 
+        <div class="line2">
+            <div class="passwordLength">
+                <div class="text">Character Length</div>
+                <div class="length">6</div>
+            </div>
+            <input type="range" id="length" name="length" min="6" max="10" value="6" >
+            <div class="slider-bar">
+                <div class="slider-green-bar"></div>
+            </div>
+            <div class="checkboxes">
+                <div class="checkbox">
+                    <input type="checkbox" name="" id="uppercase">
+                    <div>Include Uppercase Letters</div>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="" id="lowercase">
+                    <div>Include Lowercase Letters</div>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="" id="numbers">
+                    <div>Include Numbers</div>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="" id="symbols">
+                    <div>Include Symbols</div>
+                </div>
+            </div>
+            
+            <div class="strengthSection">
+                <div class="name">STRENGTH</div>
+                <div class="strength"></div>
+                <div class="strength-box">
+                    <div class="first-box box"></div>
+                    <div class="second-box box"></div>
+                    <div class="third-box box"></div>
+                    <div class="fourth-box box"></div>
+                </div>
+            </div>
+            <button id="generate" onclick="generatePassword()">
+                <div>GENERATE</div> 
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>  
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

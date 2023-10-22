@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Nunito+Sans:opsz@6..12&family=Oswald&display=swap');
+
+body{
+	background-color: #0E0D13;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+ 	font-family: 'Gabarito', sans-serif;
+	font-family: 'Nunito Sans', sans-serif;
+	font-family: 'Oswald', sans-serif;
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.line1{
+	display: flex;
+    justify-content: space-between;
+    width: 320px;
+    background-color: #24232A;
+    padding: 15px 20px 15px 20px;
+    align-items: center;
+}
+
+.line2{
+	position: relative;
+    width: 320px;
+    background-color: #24232A;
+    padding: 20px;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+#password{
+	color: #54535B;
+	font-size: 18px;
+}
+
+.copy-icon{
+	color: white;
+	cursor: pointer;
+}
+
+.passwordLength{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.passwordLength .text{
+	color: #E6E5ED;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+}
+
+.passwordLength .length {
+	color:#A5FFAE;
+	font-size: 18px;
+}
+
+#length{
+	position: absolute;
+    bottom: 258px;
+    left: 17px;
+    z-index: 1;
+}
+
+.slider-bar {
+	position: relative;
+	width: auto;
+    height: 5px;
+    background-color: #18171F;
+}
+
+.slider-green-bar{
+	width: 0%;
+    height: 5px;
+    background-color: #A5FFAE;
+}
+/*********** Baseline, reset styles ***********/
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 325px;
+}
+
+/* Removes default focus */
+input[type="range"]:focus {
+  outline: none;
+}
+
+
+/* slider thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  margin-top: -5.6px; /* Centers thumb on the track */
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  height: 1rem;
+  width: 1rem;
+}
+
+.checkboxes{
+	gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox{
+	display: flex;
+	gap: 10px;
+	font-size: 14px;
+  align-items: center;
+	color: #E6E5ED;
+	letter-spacing: 1.5px;
+}
+
+input[type="checkbox"]{
+	-webkit-appearance: none;
+  appearance: none;
+  background-color: var(--form-background);
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.14em solid currentColor;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  transform: scale(0);
+  transform-origin: bottom left;
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+  background-color: black;
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+input[type="checkbox"]:checked{
+	background-color: #A5FFAE;
+	border: none;
+}
+
+.strengthSection{
+  display: grid;
+  justify-content: space-between;
+  background-color: #18171F;
+  padding: 12px;
+  align-items: center;
+  grid-template-columns: 3fr 1fr 1fr;
+}
+
+.strength{
+	color: #cacaca;
+	justify-self: flex-end;
+  margin-right: 10px;
+}
+
+.strength-box{
+	gap: 6px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.box {
+	height: 20px;
+  width: 6px;
+  border: solid 1px #dddada;
+}
+
+.strengthSection .name{
+	color: #565361;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+button{
+    padding: 13px;
+    background-color: #A5FFAE;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #A5FFAE;
+    transition: all ease 0.2s;
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 12px;
+}
+
+button:hover{
+	border: 1px solid #A5FFAE;
+	background-color: #24232A;
+	color: #A5FFAE;
+}
+
